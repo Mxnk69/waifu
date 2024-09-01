@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simpfus</title>
+    <style>
+        .sidebar {
+            height: 100%; /* Full-height */
+            width: 250px; /* Sidebar width */
+            position: fixed; /* Fixed sidebar */
+            top: 0;
+            left: 0;
+            background-color: #111; /* Background color */
+            padding-top: 20px;
+            color: white;
+        }
+        
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        
+        .sidebar a:hover {
+            background-color: #575757; /* Darker background on hover */
+        }
+        
+        .content {
+            margin-left: 260px; /* Same width as the sidebar */
+            padding: 20px;
+        }
+        .sidebar {
+            height: 100%; /* Full-height */
+            width: 250px; /* Sidebar width */
+            position: fixed; /* Fixed sidebar */
+            top: 0;
+            left: -250px; /* Hide sidebar initially */
+            background-color: #111; /* Background color */
+            padding-top: 20px;
+            color: white;
+            transition: left 0.3s; /* Smooth slide-in effect */
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757; /* Darker background on hover */
+        }
+
+        .menu-btn {
+            font-size: 30px;
+            background-color: rgba(20, 20, 20, 0);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .content {
+            margin-left: 20px; /* Space for the menu button */
+            padding: 20px;
+            transition: margin-left 0.3s; /* Smooth content shift */
+        }
+
+        .content.expanded {
+            margin-left: 260px; /* Same width as the sidebar */
+        }
+        .menu-btn.hidden {
+            display: none; /* Hide the button */
+        }
+         .content.expanded {
+            margin-left: 250px; /* Same width as the sidebar */
+        }
+      
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: rgb(20, 20, 20);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .main-content {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .image-container {
+            position: relative;
+            display: inline-block;
+            align-content: center
+            position: relative;
+        }
+        
+        .image-container img {
+            display: block;
+            align-content: center
+        }
+        
+        .overlay-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 100%; /* Adjust according to the image height */
+            color: #333 /* Hide the text but keep the link clickable */
+            align-content: center
+        }
+        .Para {
+            align-items: center;  
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            float: center;
+            color: white;
+        
+        }
+        
+        .overlay-link:hover {
+            color: rgba(255, 255, 255, 0.5); /* Optional: Change color on hover */
+            align-content: center
+        }
+        a {
+           font-size: 0.7cm
+          
+        }
+        .image-container {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f000; /* Optional: Background color for contrast */
+            float: center;
+                color: white;
+            
+        }
+        .gojo {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content:flex-end;
+            align-items: flex-end;
+            background-color: #f0f0f000; /* Optional: Background color for contrast */
+            float: right
+        }
+        .gojos {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content:flex-start;
+            align-items: flex-start;
+            background-color: #f0f0f000; /* Optional: Background color for contrast */
+        }
+        .image-container {
+            position: relative;
+            float: center;
+        }
+        
+        .image-container img {
+            display: block;
+            max-width: 100%; /* Ensures the image scales properly */
+            height: auto; /* Maintains aspect ratio */
+        }
+        
+        .overlay-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 100%; /* Adjust according to the image height */
+            color: transparent; /* Hide the text but keep the link clickable */
+            text-decoration: none;
+        }
+        
+        .overlay-link:hover {
+            color: rgba(255, 255, 255, 0.5); /* Optional: Change color on hover */
+        }
+        .card {
+      background-color: rgba(255, 255, 255, 0);
+      padding: 3cm;
+      
+      
+     background-image: url("forcard.jpg");
+
+    }
+ 
+    </style>
+</head>
+<body>
+
+    <header>
+            <h1> <img style="width: 150px; align-content: center" src="logo-color.png" alt="The waifu list">
+        Welcome to The one and only <br> website where you can learn about anime characters</h1>
+    </header>
+    
+    <nav>
+        <a href="waifu.html">The Waifu list</a>
+        <a href="husbandos.html">The Husbando list</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="card">  <div class="container">
+        <div class="main-content">
+            <h2>About Us</h2>
+            <p>Welcome to our Website. We are glad to have you here! Explore our website to learn more about our services and what we do.</p>
+            <p>You can play mini games, talk to characters and learn about them. You can rank them based on your likings too.</p>
+        </div>
+    </div>
+    
+ 
+      
+    <div class="image-container">
+            <img style="width: 420px; align-content: center" src="waifufr.jpg" alt="The waifu list">
+            <a href="waifu.html" class="overlay-link" aria-label="The waifu List"> The Waifu List</a>
+        </div>
+        <div class="Para">
+                <p>
+                    <h2>
+                        The Waifu List
+                    </h2>
+                </p>
+            </div>
+            <div class="image-container">
+                    <img style="width: 420px; align-content: center" src="husband0.jpeg" alt="The Husbando list">
+                    <a href="husbandos.html" class="overlay-link" aria-label="The waifu List"> The Husbando List</a>
+                </div>
+                <div class="Para">
+                        <p style="align-items: center;">
+                            <h2>
+                                The Husbando List
+                            </h2>
+                        </p>
+                    </div>
+    
+
+</p>
+
+
+<div class="sidebar" id="sidebar">
+    <h2>Sidebar</h2>
+    <a href="waifu.html">The Waifu List</a>
+    <a href="husbandos.html">The husbando List</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="minigame.html">Mini game</a>
+</div>
+
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById('sidebar');
+        var content = document.getElementById('content');
+
+        if (sidebar.style.left === '0px') {
+            sidebar.style.left = '-250px'; /* Hide sidebar */
+            content.classList.remove('expanded');
+        } else {
+            sidebar.style.left = '0px'; /* Show sidebar */
+            content.classList.add('expanded');
+        }
+    }
+</script>
+<button class="menu-btn" onclick="toggleSidebar()">☰</button>
+</div>
+    <footer>
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>

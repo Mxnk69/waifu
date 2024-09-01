@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="forms.css">
+
+<title>Husbando List</title>
+
+
+<style>
+
+ .sidebar {
+            height: 100%; /* Full-height */
+            width: 250px; /* Sidebar width */
+            position: fixed; /* Fixed sidebar */
+            top: 0;
+            left: 0;
+            background-color: #111; /* Background color */
+            padding-top: 20px;
+            color: white;
+        }
+        
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+        
+        .sidebar a:hover {
+            background-color: #575757; /* Darker background on hover */
+        }
+        
+        .content {
+            margin-left: 260px; /* Same width as the sidebar */
+            padding: 20px;
+        }
+        .sidebar {
+            height: 100%; /* Full-height */
+            width: 250px; /* Sidebar width */
+            position: fixed; /* Fixed sidebar */
+            top: 0;
+            left: -250px; /* Hide sidebar initially */
+            background-color: #111; /* Background color */
+            padding-top: 20px;
+            color: white;
+            transition: left 0.3s; /* Smooth slide-in effect */
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 18px;
+            color: white;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757; /* Darker background on hover */
+        }
+
+        .menu-btn {
+            font-size: 30px;
+            background-color: rgba(20, 20, 20, 0);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .content {
+            margin-left: 20px; /* Space for the menu button */
+            padding: 20px;
+            transition: margin-left 0.3s; /* Smooth content shift */
+        }
+
+        .content.expanded {
+            margin-left: 260px; /* Same width as the sidebar */
+        }
+        .menu-btn.hidden {
+            display: none; /* Hide the button */
+        }
+         .content.expanded {
+            margin-left: 250px; /* Same width as the sidebar */
+        }
+
+    .keicard {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background-color: #ffffff00;
+
+      /* Optional: Background color for contrast */
+
+    }
+
+    .makimacard {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      background-color: #ffffff00;
+      /* Optional: Background color for contrast */
+
+    }
+
+    .kei {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align: center;
+
+      background-color: #ffffff00;
+      /* Optional: Background color for contrast */
+      font-family: impact;
+
+    }
+
+    .makima {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align: center;
+      background-color: #ffffff00;
+      /* Optional: Background color for contrast */
+      font-family: impact;
+    }
+    .card {
+      background-color: rgba(255, 255, 255, 0);
+      padding: 3cm;
+      
+      
+     background-image: url("gojobackshot.png");
+       height: 100%;
+       margin: 0;
+       background-size: contain;
+
+
+
+
+
+    }
+    .name {
+      text-align: right;
+      color: black;
+
+
+text-transform: uppercase;
+    }
+  .nama {
+      text-align: left;
+       color: black;
+    
+    text-transform: uppercase;
+    }
+    .font {
+      font-family: helvetica;
+
+    }
+
+
+</style>
+
+
+
+</head>
+<body>
+
+   <header>
+        <h1>This is a list about the Husbandos in anime.</h1>
+    </header>
+
+
+<div class="font">
+<body>
+  
+   
+<div class="card"> 
+
+  <div class="keicard">
+    <img style="width: 420px; align-content: center" src="gojocard.jpg" alt="Gojo Card">
+
+  </div>
+
+  <div class="Kei">
+<div class="nama">
+    <p>
+      <h1>
+        1.Gojo Saturo
+      </h1>
+    </p><br>
+  </div>
+    <p>
+      Kei Karuizawa is one of the tritagonist of the manga, anime and light novel series Classroom of the Elite. She is
+      a student at Advanced Nurturing High School as a student and is considered as one of the leaders of the Class 1-D
+      in her first year.<br>
+      She is voiced by Ayana Taketatsu in Japanese and Bryn Apprill in English.<br>
+      Kei is a blond girl of average height with long hair arriving a her waist that are usually tied in a ponytail.<br>
+      She
+      has blue purple pupils. She often wears a light longs sleeved blue shirt over her red school uniform along with a
+      blue ribbon on her chest.<br> She also wears a short white skirt, a pair of long socks arriving at her calf along
+      with
+      a pair of dark shoes. In addition she sometimes tends to tie her uniform around her waist, wearing only her blue
+      shirt.
+    </p>
+  </div>
+  <div class="makimacard">
+    <img style="width: 420px; align-content: center" src="loidcard.jpeg" alt="Kishibe">
+
+  </div>
+  <div class="name">
+  <p>
+    <h1>
+      2.Loid
+          </h1>
+  </p>
+  </div>
+  <div class="makima">
+
+    <p>
+
+      Makima is the main antagonist of Chainsaw Man Part 1: Public Safety Saga.<br> She serves as the overarching
+      antagonist of the Gun Devil Arc and the titular main antagonist of the Control Devil Arc, in which she reveals
+      her true nature.<br>
+      She then proclaims herself to be an admirer of the Chainsaw Man, the entity that was sealed in Denji's body, and
+      plans to either be devoured by him or use his powers to eradicate all of the devils that have plagued humanity
+      for years in order to bring a better world for humanity, fulfilling the hopes of her contractor, the Japanese
+      Prime Minister.<br>
+
+
+
+    </p>
+  </div>
+  <div class="keicard">
+    <img style="width: 420px; align-content: center" src="nazuna card.jpg" alt="nazuna card">
+
+  </div>
+  <div class="nama">
+  <p>
+    <h1>
+      3.Nazuna
+    </h1>
+  </p>
+</div>
+  <div class="makima">
+
+    <p>
+
+      Nazuna Nanakusa is a character from the manga and anime series Call of the Night (Yofukashi no Uta), created by
+      Kotoyama. <br>
+      Nazuna is a laid-back and somewhat unconventional vampire who enjoys nightlife. She has a relaxed demeanor and is
+      known for her casual and nonchalant attitude. Despite her supernatural nature, she tends to lead a rather ordinary
+      life, working night shifts and indulging in her love for nocturnal activities.<br>
+      Nazuna meets the protagonist, Ko Yamori, who is struggling with insomnia and a sense of purposelessness in his
+      life. She becomes his guide into the world of vampires and nocturnal existence. Through their interactions, she
+      helps Ko explore his own desires and the mysteries of the night.<br>
+      Nazuna's character is integral to the series' exploration of themes related to night life, personal freedom, and
+      self-discovery. Her dynamic with Ko provides much of the series' emotional depth and intrigue.<br>
+
+
+
+    </p>
+  </div>
+  <div class="makimacard">
+    <img style="width: 420px; align-content: center" src="mai card.jpeg" alt="mai card">
+
+  </div>
+   <div class="name">
+  <p>
+    <h1>
+      4. Mai Sakurajima
+    </h1>
+  </p>
+</div>
+  <div class="makima">
+
+    <p>
+
+      Mai Sakurajima is a character from the light novel series Seishun Buta Yarou wa Bunny Girl Senpai no Yume wo Minai
+      (commonly known as Rascal Does Not Dream of Bunny Girl Senpai), written by Hajime Kamoshida and illustrated by
+      Keeji Mizoguchi. <br>
+      Mai is portrayed as a beautiful and popular actress who, despite her success, struggles with feelings of
+      invisibility and alienation. She is known for her calm, mature demeanor, but she also has a more vulnerable side
+      that is explored throughout the series.<br>
+      Mai plays a central role in the series as she becomes involved with the protagonist, Sakuta Azusagawa. The series
+      starts with Mai wearing a bunny girl costume in public, which no one seems to notice, and this unusual phenomenon
+      sets off a series of supernatural events linked to her emotional state. Her character's journey is deeply
+      intertwined with the themes of personal struggles, relationships, and the search for identity.<br>
+      Mai's story arc involves her dealing with the complexities of fame, her personal insecurities, and her evolving
+      relationship with Sakuta. Her character undergoes significant development as she confronts and addresses the
+      supernatural challenges affecting her life.<br>
+
+
+
+    </p>
+  </div>
+  <div class="keicard">
+    <img style="width: 420px; align-content: center" src="kurumi cards.jpg" alt="Kurumi card">
+
+  </div>
+  <div class="nama">
+  <p>
+    <h1>
+      5.Kurumi
+    </h1>
+  </p>
+</div>
+  <div class="makima">
+
+    <p>
+
+      Kurumi Tokisaki is one of the main characters in the Date A Live series.<br> She is known as the "Nightmare" and is
+      one of the most powerful Spirits.<br> Kurumi is distinguished by her gothic lolita outfit and her ability to
+      manipulate time using her powers.<br> She has a complex personality, often oscillating between being a ruthless
+      antagonist and a tragic figure with a hidden agenda. <br>
+     
+
+
+
+    </p>
+  </div>
+
+<div class="makimacard">
+  <img style="width: 420px; align-content: center" src="ellenjoecard.jpg" alt="Ellen card">
+
+</div>
+ <div class="name">
+
+<p>
+  <h1>
+   6.Ellen Joe
+  </h1>
+</p>
+</div>
+<div class="makima">
+
+  <p>
+
+    Ellen Joe is a character from the action role-playing game Zenless Zone Zero, developed by HoYoverse.<br> In the game, Ellen Joe is depicted as a character with distinctive traits and background that contribute to the game's storyline.<br> Zenless Zone Zero is set in a post-apocalyptic world where players navigate through various challenges and interact with a diverse cast of characters.<br> Ellen Joe's role and characteristics are part of what makes the game's narrative engaging and immersive.<br> 
+   
+
+
+
+  </p>
+</div>
+<div class="keicard">
+    <img style="width: 420px; align-content: center" src="marincard.JPG" alt="Marin card">
+  
+  </div>
+  <div class="nama">
+  <p>
+    <h1>
+    7.Marin Kitagawa
+    </h1>
+  </p>
+</div>
+  <div class="makima">
+  
+    <p>
+  
+      Marin Kitagawa is a fictional character from the popular manga and anime series My Dress-Up Darling (also known as Sono Bisque Doll wa Koi wo Suru), created by Shinichi Fukuda. The series first began serialization in 2018.<br>Marin is a high school student known for her outgoing personality and passion for cosplay. She is a major character in the series and becomes the central focus of the story's plot. <br>Marin has long, blonde hair and striking green eyes. Her appearance is often noted for its vibrancy and attention to detail, which reflects her enthusiasm for cosplay. <br>Marin is lively, confident, and unapologetically enthusiastic about her interests. She has a warm and approachable demeanor, making her well-liked among her peers.<br>
+      The story revolves around her collaboration with a classmate, Wakana Gojou, who is a skilled craftsman specializing in hina dolls. Marin asks Wakana to help her create elaborate costumes for her cosplay, and the series explores their evolving friendship and romantic undertones.<br>
+      Marin's character development is central to the series, as it delves into her personal growth, her love for cosplay, and her interactions with Wakana. The series highlights themes of self-expression, creativity, and the bond between the characters.<br>
+  
+  
+  
+    </p>
+  </div>
+  <div class="makimacard">
+      <img style="width: 420px; align-content: center" src="mikasacard.jpg" alt="Marin card">
+    
+    </div>
+     <div class="name">
+    <p>
+      <h1>
+      8.Mikasa Ackerman
+      </h1>
+    </p>
+  </div>
+    <div class="makima">
+    
+      <p>
+    
+       Mikasa Ackerman is a prominent character from the manga and anime series Attack on Titan (Shingeki no Kyojin), created by Hajime Isayama.<br>
+       Mikasa has long, black hair that she often wears in a red scarf, a symbol of her past and connection to her family.<br>
+ She has grayish-blue eyes.<br>
+ In her military uniform, she typically wears the standard Survey Corps attire, including a brown jacket with the emblem of the corps, green cloak, and the vertical maneuvering equipment.<br>
+ Mikasa plays a crucial role in the fight against the Titans and the various conflicts that arise throughout the series. Her loyalty, strength, and strategic mind make her an invaluable member of the Survey Corps.<br>
+ Mikasa is fiercely protective of those she cares about, particularly her adoptive brother, Eren Yeager. She is known for her stoic and serious demeanor but shows deep emotional depth and a strong sense of justice.<br>
+ She is one of the most skilled soldiers in the series, renowned for her proficiency in using the Omni-Directional Mobility Gear and her combat abilities.<br>
+      </p>
+    </div>
+    <div class="keicard">
+        <img style="width: 420px; align-content: center" src="frierencard.jpeg" alt="frieren card">
+      
+      </div>
+      <div class="nama">
+      <p>
+        <h1>
+       9.Frieren
+        </h1>
+      </p>
+    </div>
+      <div class="makima">
+      
+        <p>
+      Frieren is a character from the manga and anime series Frieren: Beyond Journey's End (Sōsō no Frieren), created by Kanehito Yamada and illustrated by Tsukasa Abe. The series explores themes of time, legacy, and the emotional impact of a long-lived being reflecting on a completed journey.<br>
+      Frieren has long, silver hair, which she often wears loose.<br>
+      She has light blue eyes.<br>
+       She typically wears a mage's robe or similar attire that reflects her status as a powerful magician.<br>
+        Frieren is a stoic and introspective character. She is a mage who has lived for centuries and has a detached demeanor, largely due to her long lifespan and the many changes she has witnessed.<br>
+        Over time, she becomes more engaged with the people and the world around her, seeking to understand human emotions and experiences more deeply.<br>
+         Frieren was part of a legendary hero party that defeated the Demon King. The story picks up after the end of their journey, focusing on Frieren's life as she reflects on her past adventures and seeks to understand the human experiences she has missed.<br>
+         Her journey involves reconnecting with her past companions, dealing with the passage of time, and fulfilling promises made during her earlier adventures.<br>
+         The series follows Frieren as she embarks on a new journey after her previous hero party's quest has concluded. She explores themes of memory, legacy, and the value of time, offering a unique perspective on the typical fantasy adventure narrative.<br>
+         
+        </p>
+      </div>
+  
+
+  <p style="background-color:#333;">
+    <a href="yourfav.html"> Choose your favourite one</a>
+  </p>
+</div>
+
+</div>
+<div class="sidebar" id="sidebar">
+    <h2>Sidebar</h2>
+    <a href="waifu.html">The Waifu List</a>
+    <a href="husbandos.html">The husbando List</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+     <a href="homepage.html">homepage</a>
+</div>
+
+
+<script>
+    function toggleSidebar() {
+        var sidebar = document.getElementById('sidebar');
+        var content = document.getElementById('content');
+
+        if (sidebar.style.left === '0px') {
+            sidebar.style.left = '-250px'; /* Hide sidebar */
+            content.classList.remove('expanded');
+        } else {
+            sidebar.style.left = '0px'; /* Show sidebar */
+            content.classList.add('expanded');
+        }
+    }
+</script>
+<button class="menu-btn" onclick="toggleSidebar()">☰</button>
+<p style="background-color:#333;">
+  <a href="yourfavh.html"> Choose your favourite one</a>
+</p>
+
+        
+</body>
+</html>

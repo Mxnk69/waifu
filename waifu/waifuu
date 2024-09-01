@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Waifu List</title>
+
+</head>
+<body>
+
+<h2>This is the Waifu List made by me and me only (the local waifu expert)</h2>
+
+<table>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+      <th>Anime </th>
+        <th> Personality </th>
+        <th> Actual personality </th>
+        <th>DOM or sub </th>
+        <th>
+            Dere Dere Type
+        </th>
+      <th>
+        Visual Example
+    </tr>
+    <tr>
+      <td>Kei Karuizawa </td>
+      <td>16
+      </td>
+      <td>Classroom of The Elite
+      </td>
+      <td>
+          6.9 cm
+      </td>
+      <td>
+          Kind,Caring,Dumb,Cute and stuff
+      </td>
+      <td>
+          Switch
+      </td>
+      <td>
+          tsundere
+      </td>
+      <td>
+        <img src="kei_karuizawa_by_pokearceus_dgcxobl.jepg">
+        </td>
+    </tr>
+    <tr>
+      <td>Nazuna </td>
+      <td>30-40 </td>
+      <td>
+          Call of The Night
+      </td>
+      <td>
+          32B
+      </td>
+      <td>
+          Dominating,Lusty,Kind,Logical
+      </td>
+      <td>
+          DOM
+      </td>
+      <td>
+          Himedere
+      </td>
+    </tr>
+    <tr>
+      <td>
+          Makima
+      </td>
+      <td>
+          27
+      </td>
+      <td>
+          Chainsawman
+      </td>
+      <td>
+          32D
+      </td>
+      <td>
+           a kind, gentle, social and friendly woman (lets not talk about the manga tho)
+      </td>
+      <td>
+          DOM AF
+      </td>
+      <td>
+          Kuudere
+      </td>
+    </tr>
+    <tr>
+      <td>Nazuna </td>
+      <td>30-40 </td>
+      <td>
+          Call of The Night
+      </td>
+      <td>
+          32B
+      </td>
+      <td>
+          Dominating,Lusty,Kind,Logical
+      </td>
+      <td>
+          DOM
+      </td>
+      <td>
+          Himedere
+      </td>
+    </tr>
+</table>
+
+</body>
+</html>

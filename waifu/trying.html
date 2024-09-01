@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image with Link Overlay</title>
+    <style>
+        .image-container {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .image-container img {
+            display: block;
+        }
+        
+        .overlay-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 100%; /* Adjust according to the image height */
+            color: transparent; /* Hide the text but keep the link clickable */
+            text-decoration: none;
+        }
+        
+        .overlay-link:hover {
+            color: rgba(255, 255, 255, 0.5); /* Optional: Change color on hover */
+        }
+    </style>
+</head>
+<body>
+
+<div class="image-container">
+    <img src="waifuclick.png" alt="The waifu list">
+    <a href="waifu.html" class="overlay-link" aria-label="The waifu List"></a>
+</div>
+
+</body>
+</html>
